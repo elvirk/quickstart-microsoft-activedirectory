@@ -730,11 +730,11 @@
                                                 "Ref": "DomainDNSName"
                                             },
                                             " ",
-                                            "-SafeModeAdministratorPassword (ConvertTo-SecureString ",
+                                            "-SafeModeAdministratorPassword (ConvertTo-SecureString \"",
                                             {
                                                 "Ref": "DomainAdminPassword"
                                             },
-                                            " -AsPlainText -Force) ",
+                                            "\" -AsPlainText -Force) ",
                                             "-DomainMode Win2012R2 ",
                                             "-DomainNetbiosName ",
                                             {
@@ -781,11 +781,11 @@
                                                 "Ref": "DomainDNSName"
                                             },
                                             " ",
-                                            "-AccountPassword (ConvertTo-SecureString ",
+                                            "-AccountPassword (ConvertTo-SecureString \"",
                                             {
                                                 "Ref": "DomainAdminPassword"
                                             },
-                                            " -AsPlainText -Force) ",
+                                            "\" -AsPlainText -Force) ",
                                             "-Enabled $true ",
                                             "-PasswordNeverExpires $true\""
                                         ]
@@ -1262,11 +1262,11 @@
                                                 "Ref": "DomainAdminUser"
                                             },
                                             "',",
-                                            "(ConvertTo-SecureString ",
+                                            "(ConvertTo-SecureString \"",
                                             {
                                                 "Ref": "DomainAdminPassword"
                                             },
-                                            " -AsPlainText -Force))) ",
+                                            "\" -AsPlainText -Force))) ",
                                             "-Restart\""
                                         ]
                                     ]
@@ -1308,17 +1308,17 @@
                                                 "Ref": "DomainAdminUser"
                                             },
                                             "',",
-                                            "(ConvertTo-SecureString ",
+                                            "(ConvertTo-SecureString \"",
                                             {
                                                 "Ref": "DomainAdminPassword"
                                             },
-                                            " -AsPlainText -Force))) ",
+                                            "\" -AsPlainText -Force))) ",
                                             "-SafeModeAdministratorPassword ",
-                                            "(ConvertTo-SecureString ",
+                                            "(ConvertTo-SecureString \"",
                                             {
                                                 "Ref": "DomainAdminPassword"
                                             },
-                                            " -AsPlainText -Force) ",
+                                            "\" -AsPlainText -Force) ",
                                             "-Confirm:$false -Force\""
                                         ]
                                     ]
@@ -1404,11 +1404,11 @@
                                                 "Ref": "DomainAdminUser"
                                             },
                                             "',",
-                                            "(ConvertTo-SecureString ",
+                                            "(ConvertTo-SecureString \"",
                                             {
                                                 "Ref": "DomainAdminPassword"
                                             },
-                                            " -AsPlainText -Force))) ",
+                                            "\" -AsPlainText -Force))) ",
                                             "\""
                                         ]
                                     ]
